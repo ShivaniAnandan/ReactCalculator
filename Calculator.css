@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+  }
+  .calculator {
+    max-width: 100%;
+    height: 92vh;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  h1 {
+    color: white;
+    margin-left: 200px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+  }
+  
+  button {
+    background-color: white;
+    color: black;
+    width: 49px;
+    height: 33px;
+    padding: 0px;
+    border: none;
+    margin-right:-180px;
+    cursor: pointer;
+    margin-left: 200px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 2px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    margin-left: 200px;
+  }
+  
+  .result {
+    margin-top: 10px;
+    color: white;
+    margin-left: 200px;
+  }
+  
+  .success-message {
+    color: green;
+    margin-top: 10px;
+    margin-left: 200px;
+  }
+  
+  /* Responsive Design */
+  
+  @media screen and (max-width: 768px) {
+    .calculator {
+      max-width: 80%;
+      height: auto;
+    }
+  
+    h1,
+    input,
+    button,
+    .error-message,
+    .result,
+    .success-message {
+      margin-left: 0;
+    }
+  
+    input {
+      width: 100%;
+    }
+  
+    button {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 5px;
+    }
+  }
